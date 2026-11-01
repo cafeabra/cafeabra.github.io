@@ -9,63 +9,78 @@
  "categories": [
   {
    "id": "cold",
-   "name": "نوشیدنی سرد بر پایه قهوه "
+   "name": "نوشیدنی سرد بر پایه قهوه ",
+   "bg": "images/bg/cold-coffee.webp"
   },
   {
    "id": "hot",
-   "name": "نوشیدنی گرم بر پایه قهوه "
+   "name": "نوشیدنی گرم بر پایه قهوه ",
+   "bg": "images/bg/coffee-bar.webp"
   },
   {
    "id": "sweet",
-   "name": "قهوه دمی"
+   "name": "قهوه دمی",
+   "bg": "images/bg/coffee-brew.webp"
   },
   {
    "id": "xmvdmy0aw6f6g",
-   "name": "چایی و دمنوش"
+   "name": "چایی و دمنوش",
+   "bg": "images/bg/tea.webp"
   },
   {
    "id": "xmvp12fu5ordf",
-   "name": "نوشیدنی سرد و گرم بدون قهوه"
+   "name": "نوشیدنی سرد و گرم بدون قهوه",
+   "bg": "images/bg/no-coffee.webp"
   },
   {
    "id": "xmvp12rnvgall",
-   "name": "کیک و دسر"
+   "name": "کیک و دسر",
+   "bg": "images/bg/dessert.webp"
   },
   {
    "id": "xmvp12xk2x4mh",
-   "name": "شیک ها و گلاسه"
+   "name": "شیک ها و گلاسه",
+   "bg": "images/bg/glace.webp"
   },
   {
    "id": "xmvp1328hpynw",
-   "name": "رژیمی بار"
+   "name": "رژیمی بار",
+   "bg": "images/bg/diet.webp"
   },
   {
    "id": "xmvp14sel62dq",
-   "name": "پیتزا"
+   "name": "پیتزا",
+   "bg": "images/bg/pizza-snack.webp"
   },
   {
    "id": "xmvp14w7gk3t7",
-   "name": "اسنک"
+   "name": "اسنک",
+   "bg": "images/bg/pizza-snack.webp"
   },
   {
    "id": "xmvp1523fsy4y",
-   "name": "هات چیپس"
+   "name": "هات چیپس",
+   "bg": "images/bg/pizza-snack.webp"
   },
   {
    "id": "xmvp155h02zh0",
-   "name": "ساندویچ"
+   "name": "ساندویچ",
+   "bg": "images/bg/sandwich.webp"
   },
   {
    "id": "xmvp1598kgb7k",
-   "name": "برگر"
+   "name": "برگر",
+   "bg": "images/bg/burger.webp"
   },
   {
    "id": "xmvp15guf43ca",
-   "name": "میان وعده و صبحانه"
+   "name": "میان وعده و صبحانه",
+   "bg": "images/bg/breakfast.webp"
   },
   {
    "id": "xmvp15rn83m4a",
-   "name": "ماکتیل و اسموتی"
+   "name": "ماکتیل و اسموتی",
+   "bg": "images/bg/smoothie.webp"
   },
   {
    "id": "xmvp5a0c4qbco",

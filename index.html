@@ -130,10 +130,14 @@ textarea{resize:vertical;min-height:4.5rem}
 .search{flex:0 1 190px;min-width:120px}
 
 /* menu */
-main{padding-block:30px 120px;scroll-margin-top:70px}
-.sec{max-width:780px;margin:0 auto 36px;scroll-margin-top:84px}
-.sec h2{font-family:var(--font-display);font-weight:400;font-size:2.2rem;line-height:1.3;margin:0 0 14px;display:flex;align-items:center;gap:14px}
-.sec h2::after{content:"";height:2px;flex:1;background:linear-gradient(90deg,var(--accent),transparent);border-radius:2px;opacity:.7}
+main{padding-block:0 100px;scroll-margin-top:70px}
+.sec{scroll-margin-top:84px}
+/* section background: the category photo fills the whole section edge to edge */
+.sec{--card:rgba(32,19,12,.7);--ink:#f4e8d2;--muted:#cdb99c;--line:rgba(255,235,205,.15);--soft:rgba(255,235,205,.12);--price:#f0c07e;--shadow:0 6px 18px rgba(0,0,0,.35);--shadow-hi:0 14px 30px rgba(0,0,0,.5);--ph:#8a6a48;position:relative;isolation:isolate;max-width:780px;margin:0 auto;padding:28px 0 44px;color:var(--ink)}
+.sec::before{content:"";position:absolute;z-index:-1;top:0;bottom:0;left:calc(50% - 50vw);right:calc(50% - 50vw);background:linear-gradient(180deg,rgba(18,10,6,.1) 0,rgba(18,10,6,.5) 240px,rgba(18,10,6,.9) 460px,#150c07 100%),var(--bgimg,none) no-repeat 50% 56px/min(840px,100vw) auto,radial-gradient(80% 340px at 50% 0,#6b4219 0%,#2a190c 70%,#150c07 100%)}
+.sec h2{margin:0 0 18px;font-family:var(--font-display);font-weight:400;font-size:2.3rem;line-height:1.3;color:#fff3dc;text-shadow:0 2px 16px rgba(0,0,0,.7)}
+.sec .item{backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px)}
+@media (max-width:520px){.sec{padding:22px 0 36px}.sec h2{font-size:1.8rem}}
 .grid{display:flex;flex-direction:column;gap:12px}
 .item{background:var(--card);border-radius:20px;padding:10px;box-shadow:var(--shadow);display:flex;flex-direction:row;align-items:center;gap:14px;min-width:0;border:1px solid var(--line);transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s;animation:up .6s cubic-bezier(.2,.7,.2,1) both;animation-delay:calc(var(--i,0) * 60ms)}
 .item:hover{transform:translateY(-3px);box-shadow:var(--shadow-hi)}
@@ -352,7 +356,7 @@ function renderMenu(){
     total+=items.length;
     if(!items.length && !(canEdit&&!q))return;
     chips+='<button class="chip" data-go="cat-'+esc(c.id)+'">'+esc(c.name)+'</button>';
-    html+='<section class="sec" id="cat-'+esc(c.id)+'"><h2>'+esc(c.name)+'</h2>'+
+    html+='<section class="sec" id="cat-'+esc(c.id)+'"'+(c.bg?' style="--bgimg:url('+esc(c.bg)+')"':'')+'><h2>'+esc(c.name)+'</h2>'+
       (items.length?'<div class="grid">'+items.map(function(p,i){return itemHtml(p,d,i)}).join('')+'</div>':'<p class="note">این دسته هنوز محصولی ندارد.</p>')+'</section>';
   });
   if(!total && !html){
